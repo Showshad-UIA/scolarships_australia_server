@@ -20,7 +20,7 @@ exports.getConsultantInfo=async(req,res,next)=>{
         res.status(400).json({
           status: "Failed",
           message: "data is not found",
-          data: error.message,
+          error: error.message,
         });
       }
 }
@@ -41,7 +41,7 @@ exports.saveConsultantInfo=async(req,res,next)=>{
         res.status(400).json({
             status: "Failed",
             message: "data not saved successfully",
-            data: error.message,
+            error: error.message,
           });
     }
 }

@@ -13,7 +13,8 @@ const consultantInfo=mongoose.Schema({
     },
     email:{
         type:String,
-        trim:true
+        trim:true,
+        unique:true
     }
 })
 
